@@ -2,7 +2,7 @@
   "defaultSchema": "dataform",
   "assertionSchema": "dataform_assertions",
   "warehouse": "bigquery",
-  "defaultDatabase": "aw-general-dev",
+  "defaultDatabase": "carion-aw-dev",
   "defaultLocation": "US"
 }
     
