@@ -1,7 +1,0 @@
-config { type: "table",
-        assertions: {
-            nonNull: ["test"]
-        }
-}
-
-SELECT test from ${ref("second_view")}
