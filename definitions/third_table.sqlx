@@ -1,4 +1,4 @@
-config { type: "table",
+config { type: "incremental",
         assertions: {
             nonNull: ["test"]
         }
