@@ -1,0 +1,29 @@
+# Copyright 2023 Google. 
+# This software is provided as-is, without warranty or representation for 
+# any use or purpose. Your use of it is subject to your agreement with Google.  
+
+steps:
+- name: 'bash'
+  id: Create dataform config file
+  script: |
+    #!/usr/bin/env bash
+    cp dataform_$_RUN_ENV.json dataform.json
+- name: 'bash'
+  id: create dataform credential file
+  script: |
+    #!/usr/bin/env bash
+    echo '{"projectId": "${PROJECT_ID}", "location": "us-central1"}' > .df-credentials.json
+- name: 'dataformco/dataform:2.7.0'
+  id: Install project dependencies
+  args:
+  - install
+- name: 'dataformco/dataform:2.7.0'
+  id: Run dataform compile
+  args:
+  - compile
+- name: 'dataformco/dataform:2.7.0'
+  id: Run dataform test
+  args:
+  - test
+options:
+  automapSubstitutions: true
