@@ -1,6 +1,7 @@
 config {
   type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
-  schema: "raw"
+  schema: "raw",
+  tags: ["pipeline:dummy"]
 }
 
 
