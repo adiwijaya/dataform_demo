@@ -15,7 +15,7 @@ pre_operations {
 SELECT
   *
 FROM  ${ref("raw", "raw_a")}
-UNION
+UNION ALL
 SELECT
   *
 FROM  ${ref("raw", "raw_b")}
