@@ -13,6 +13,6 @@ pre_operations {
 }
 
 SELECT
-  count(*)
+  count(*) as cnt
 FROM  ${ref("dwh", "table_a")}
 LIMIT 1
