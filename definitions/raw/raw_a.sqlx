@@ -1,0 +1,8 @@
+config {
+  type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
+  schema: "raw",
+}
+
+-- The rest of a SQLX file contains your SELECT statement used to create the table.
+
+SELECT 1 as test
