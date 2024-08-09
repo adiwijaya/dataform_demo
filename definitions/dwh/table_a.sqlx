@@ -7,10 +7,10 @@ config {
     tags: ["pipeline:dummy"]
 }
 
-pre_operations {
-  ${when(incremental(), 
- `DELETE FROM ${self()} WHERE dt = DATE(CAST("${dataform.projectConfig.vars.data_date}" AS STRING))`)}
-}
+-- pre_operations {
+--   ${when(incremental(), 
+--  `DELETE FROM ${self()} WHERE dt = DATE(CAST("${dataform.projectConfig.vars.data_date}" AS STRING))`)}
+-- }
 
 SELECT
   *
