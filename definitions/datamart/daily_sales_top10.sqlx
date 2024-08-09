@@ -3,7 +3,7 @@
 config {
     type: "incremental",
     description: "sample table A",
-    schema: "dwh",
+    schema: "datamart",
     tags: ["pipeline:dummy"]
 }
 
