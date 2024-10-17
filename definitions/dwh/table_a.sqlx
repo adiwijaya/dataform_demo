@@ -4,7 +4,8 @@ config {
     type: "incremental",
     description: "sample table A",
     schema: "dwh",
-    tags: ["pipeline:dummy"]
+    tags: ["pipeline:dummy"],
+    columns: column_pii_functions.apply_pii
 }
 
 -- pre_operations {

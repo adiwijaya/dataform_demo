@@ -1,7 +1,8 @@
 config {
-  type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
+  type: "table", // Creates a view in BigQuery. Try changing to "table" instead.
   schema: "raw",
-  tags: ["pipeline:dummy"]
+  tags: ["pipeline:dummy"],
+  columns: column_pii_functions.ga4_events
 }
 
 -- The rest of a SQLX file contains your SELECT statement used to create the table.
