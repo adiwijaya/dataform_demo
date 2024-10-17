@@ -1,3 +1,3 @@
-function buildViewUnion(columns){
+function apply_pii(columns){
     return columns;
 }
