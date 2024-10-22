@@ -1,0 +1,16 @@
+config {
+    type: "operations",
+    tags: ["pipeline:dummy"],
+}
+
+EXPORT DATA
+  OPTIONS (
+    field_delimiter=",",
+    format = 'CSV',
+    OVERWRITE = TRUE,
+    uri = 'gs://carion-aw-dev-demo-data/*.csv'
+  )AS
+    SELECT * 
+    FROM
+    ${ref("table_a")}
+    ;

@@ -3,5 +3,8 @@
     "assertionSchema": "dataform_assertions",
     "warehouse": "bigquery",
     "defaultDatabase": "carion-aw-dev",
-    "defaultLocation": "us-central1"
+    "defaultLocation": "us-central1",
+    "vars":{"confidential_nonpi":"projects/carion-aw-dev/locations/us-central1/taxonomies/558547283353219944/policyTags/7217681815028003155","confidential":"projects/carion-aw-dev/locations/us-central1/taxonomies/558547283353219944/policyTags/7217681815028003155",
+    "my_json_array": "[{\"name\": \"item1\", \"value\": 10},{\"name\": \"item2\", \"value\": 20}]"
+    }
 }

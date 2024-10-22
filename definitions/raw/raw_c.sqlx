@@ -1,0 +1,24 @@
+config {
+    type: "operations",
+    name: "raw_c",
+    schema: "raw",
+    hasOutput: true,
+    columns: {
+        sa2_code21: {
+            description: "test2",
+            bigqueryPolicyTags: ["projects/example-project/locations/us/taxonomies/123456789/policyTags/123456789"]
+        }
+    }
+}
+
+CREATE TABLE IF NOT EXISTS
+  ${self()} ( sa2_code21 STRING,
+    sa3_code21 STRING,
+    sa4_code21 STRING,
+    gcc_code21 STRING,
+    ste_code21 STRING,
+    sa2_name21 STRING,
+    sa3_name21 STRING,
+    sa4_name21 STRING,
+    gcc_name21 STRING,
+    ste_name21 STRING );

@@ -1,20 +1,13 @@
-function apply_pii(columns){
-    return columns;
-}
-
-const TRAFFIC_SOURCE_MEDIUM = {
-  test: `Traffic source medium`
+const raw_a = {
+    test: {
+        description: "test2",
+        bigqueryPolicyTags: ["projects/carion-aw-dev/locations/us-central1/taxonomies/558547283353219944/policyTags/7217681815028003155"]
+    }
 };
 
-const TRAFFIC_SOURCE_NAME = {
-  traffic_source_name: `Name of traffic source`
-};
-
-
-const ga4_events = {
-  ...TRAFFIC_SOURCE_MEDIUM,
-  ...TRAFFIC_SOURCE_NAME,
+const pii = {
+    ...raw_a
 };
 module.exports = {
-  ga4_events
+    pii
 }

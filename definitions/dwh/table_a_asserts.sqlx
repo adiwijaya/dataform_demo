@@ -1,0 +1,17 @@
+config {
+    type: "assertion",
+    name: "assert_not_zero"
+}
+
+ASSERT
+  (
+  SELECT
+    CASE
+      WHEN COUNT(*) >= 10 THEN true
+      ELSE false
+  END
+    AS assertion_result
+  FROM
+    ${ref("table_a")}
+  WHERE
+    test=2 )

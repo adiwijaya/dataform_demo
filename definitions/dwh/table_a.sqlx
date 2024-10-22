@@ -4,8 +4,7 @@ config {
     type: "incremental",
     description: "sample table A",
     schema: "dwh",
-    tags: ["pipeline:dummy"],
-    columns: column_pii_functions.apply_pii
+    tags: ["pipeline:dummy"]
 }
 
 -- pre_operations {
@@ -15,8 +14,5 @@ config {
 
 SELECT
   *
-FROM  ${ref("raw", "raw_a")}
-UNION ALL
-SELECT
-  *
 FROM  ${ref("raw", "raw_b")}
+WHERE test = 1

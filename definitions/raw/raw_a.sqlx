@@ -1,10 +1,13 @@
 config {
-  type: "table", // Creates a view in BigQuery. Try changing to "table" instead.
+  type: "table", // Now creates a table in BigQuery
   schema: "raw",
   tags: ["pipeline:dummy"],
-  columns: column_pii_functions.ga4_events
+  columns: policy_raw_a.column_policy_list
 }
 
--- The rest of a SQLX file contains your SELECT statement used to create the table.
 
-SELECT 1 as test
+  -- The rest of a SQLX file contains your SELECT statement used to create the table.
+SELECT
+  "1" AS col_a,
+  "2" AS col_b,
+  "${csv_parser.example_json.val1}" AS bla

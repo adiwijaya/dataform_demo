@@ -1,0 +1,2 @@
+table_name,col_name,policy_tag_variable
+table_a,col_a,dataform.projectConfig.vars.policy_l2.confidential_pii

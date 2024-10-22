@@ -1,6 +1,7 @@
 {
   "name": "dataform-project-1",
   "dependencies": {
-    "@dataform/core": "2.0.1"
+    "@dataform/core": "2.0.1",
+    "dataform-assertions": "https://github.com/devoteamgcloud/dataform-assertions/archive/refs/tags/v2.0.0.tar.gz"
   }
 }
