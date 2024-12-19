@@ -1,8 +1,7 @@
 config {
   type: "table", // Now creates a table in BigQuery
   schema: "raw",
-  tags: ["pipeline:dummy"],
-  columns: policy_raw_a.column_policy_list
+  tags: ["pipeline:dummy"]
 }
 
 
